@@ -1,0 +1,102 @@
+{
+    "projects": [
+        {
+          "id": "1",
+          "title": "Deep Hierarchical Variational Autoencoder-based World Models for RL Environments",
+          "description": "Developed advanced reinforcement learning models by leveraging NVAE in World Models, achieving a 45% performance boost in Dream Car Racing-v2, baseline parity in Car Racing-v2, and 95% success in Panda-Gym reach tasks.",
+          "category": ["Graduate Thesis","Reinforcement Learning"],
+          "github_link": "https://github.com/sriharshitha-ayyalasomayajula/NVAE-based-World-Models",
+          "image": "images/thumbs/nvae_worldmodels.png"
+        },
+        {
+          "id": "2",
+          "title": "Diabetes Prediction",
+          "description": "Designed a diabetes prediction system using the PIMA dataset, leveraging and evaluating machine learning algorithms, with Random Forest demonstrating superior reliability in predicting diabetes risk.",
+          "category": "AI/ML",
+          "github_link": "https://github.com/sriharshitha-ayyalasomayajula/Diabetes_Prediction",
+          "image": "images/thumbs/diabetes_prediction.png"
+        },
+        {
+          "id": "3",
+          "title": "Email Spam Classification",
+          "description": "Implemented Gaussian Naive Bayes on the Spam-base dataset, achieving 85% accuracy in spam detection, with performance insights visualized through a Confusion Matrix.",
+          "category": "AI/ML",
+          "github_link": "https://github.com/sriharshitha-ayyalasomayajula/CS545_MachineLearning",
+          "image": "images/thumbs/spam_email.png"
+        },
+        {
+          "id": "4",
+          "title": "K-Pop Music Recommendation System",
+          "description": "Built a K-Pop Music Recommendation System using Spotify Web API and hybrid techniques, boosting user engagement by 20% with a Streamlit interface for seamless, personalized genre and track selection.",
+          "category": "AI/ML",
+          "github_link": "https://github.com/sriharshitha-ayyalasomayajula/K-Pop-Music-Recommendation-System",
+          "image": "images/thumbs/Music_recommendation.png"
+        },
+        {
+          "id":"5",
+          "title": "Deep Learning-Based Spatial Detection of Drainage Structures (Culverts)",
+          "description": "Conducted advanced object detection research on culverts, analyzing 6,000 spatial samples across four U.S. states, and implemented DINO (ResNet 50) to achieve 77% accuracy, outperforming Faster RCNN, DETR, and YOLO in comparative analysis.",
+          "category": "Computer Vision",
+          "github_link": "https://github.com/shayan223/Culvert_analysis/tree/dino",
+          "image": "images/thumbs/culverts.png"
+        },
+        {
+          "id": "6",
+          "title": "Image Captioning using CNN and Transformer Model",
+          "description": "Developed an advanced image captioning system combining CNNs for feature extraction and an Attention-based Transformer for language generation, achieving a ROUGE score of 0.8 on the Flickr 8K dataset for highly precise captions.",
+          "category": "Computer Vision",
+          "github_link": "https://github.com/sriharshitha-ayyalasomayajula/Image_Captioning",
+          "image": "images/thumbs/image_caption.png"
+        },
+        {
+          "id":"7",
+          "title": "Text Summarization Using LSTM and Hugging Face Models",
+          "description": "Engineered an LSTM-based Seq2Seq model for abstractive text summarization on the CNN Daily News dataset, achieving a ROUGE score of 0.75, and implemented Pegasus and BART for movie plot summarization, with Pegasus achieving a superior ROUGE score of 0.8.",
+          "category": "NLP",
+          "github_link": "https://github.com/sriharshitha-ayyalasomayajula/Text_Sumarization",
+          "image": "images/thumbs/text_summary.png"
+        },
+        {
+          "id":"8",
+          "title": "Balance Cart-Pole with Qlearning & DQN",
+          "description": "Applied Q-Learning and Deep Q-Networks (DQN) to solve the Cart-Pole-v0 problem, achieving a 60% improvement in balance performance with DQN over traditional Q-Learning.",
+          "category": "Reinforcement Learning",
+          "github_link": "https://github.com/sriharshitha-ayyalasomayajula/CartPole_QLearning_DQN",
+          "image": "images/thumbs/cartpole.png"
+        },
+        {
+          "id":"9",
+          "title": "System Monitor",
+          "description": "Created a real-time system monitor in C++ with ncurses for efficient tracking of CPU, memory, and processes, enhancing monitoring by 25% and reducing development time by 30% with automated Makefile processes.",
+          "category": "C++ Projects",
+          "github_link": "https://github.com/sriharshitha-ayyalasomayajula/System_Monitor",
+          "image": "images/thumbs/monitor.png"
+        },
+        {
+          "id":"10",
+          "title": "Traffic Simulation",
+          "description": "Designed a multi-threaded traffic flow simulator in C++ to improve computational efficiency by 40%, leveraging OpenCV for enhanced traffic visualization, boosting management insights by 35%.",
+          "category": "C++ Projects",
+          "github_link": "https://github.com/sriharshitha-ayyalasomayajula/Traffic_Simulation",
+          "image": "images/thumbs/traffic.png"
+        }, 
+        {
+          "id":"11",
+          "title": "Chatbot",
+          "description": "Built an advanced C++ chatbot with graph-based knowledge representation, achieving 90% query resolution accuracy and optimizing memory management with raw pointers to enhance efficiency by 20%.",
+          "category": ["NLP", "C++ Projects"],
+          "github_link": "https://github.com/sriharshitha-ayyalasomayajula/Chatbot",
+          "image": "images/thumbs/chatbot.png"
+        },
+        {
+          "id":"12",
+          "title": "Street Route Planner",
+          "description": "Developed a high-performance street route planner using OpenStreetMap and IO2D, integrating the A* algorithm in C++ to boost routing efficiency by 15% with visually accurate path rendering.",
+          "category": ["Computer Vision", "C++ Projects"],
+          "github_link": "https://github.com/sriharshitha-ayyalasomayajula/Street_Planner",
+          "image": "images/thumbs/street_route.png"
+        }
+      ]
+}
+  
+  
