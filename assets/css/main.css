@@ -2651,17 +2651,23 @@ input, select, textarea {
 		}
 
 /* Footer */
+	#footer h2 {
+		color: #ffffff; /* Use a light color */
+		font-size: 1.2em; /* Make it stand out */
+		margin-bottom: 1em; /* Add space below */
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for visibility */
+	}
 
 	#footer .icons {
 		margin: 1em 0 0 0;
 	}
 
 		#footer .icons a {
-			color: rgba(255, 255, 255, 0.4);
+			color: #ffffff;
 		}
 
 	#footer .copyright {
-		color: rgba(255, 255, 255, 0.4);
+		color: #ffffff;
 		font-size: 0.8em;
 		list-style: none;
 		margin: 1em 0 0 0;
