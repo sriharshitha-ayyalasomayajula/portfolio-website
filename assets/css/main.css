@@ -72,12 +72,6 @@ input, select, textarea {
 	appearance: none;
 }
 
-/* Remove extra gap at the top of the main content */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
 /* Basic */
 
 	html {
@@ -87,7 +81,7 @@ body, html {
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
-    
+
 	body {
 		background: #fff;
 	}
@@ -111,21 +105,6 @@ body, html {
 		line-height: 1.75em;
 	}
 
-	/* Ensure the main content starts from the top */
-	#main {
-		margin-top: 0 !important; /* Remove any margin at the top */
-		padding-top: 0 !important; /* Remove any padding at the top */
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start; /* Ensure content aligns to the top */
-	}
-
-	/* General Section Styling */
-	#main > section {
-		margin: 1em 0 0 0; /* Further reduced from 2em */
-		padding: 1em 0 0 0; /* Further reduced from 2em */
-	}
-
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -143,24 +122,25 @@ body, html {
 		}
 
 	strong, b {
-		color: #787878;
+		color: #302c2c;
 		font-weight: 400;
 	}
 
 	em, i {
 		font-style: italic;
 	}
-	
+
 	p {
-		margin: 0 0 0.88em 0;/* Reduced spacing between paragraphs */
-		color: #242323; /* Darker text for better readability */
-		line-height: 1.6;
+		margin: 0 0 1em 0;
+		color:#504e4e ;
+		padding-bottom: 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #2C3E50; /* Darker, more appealing color */
-		font-weight: bold;
-		margin-bottom: 0.4em; /* Further adjusted spacing below headings */
+		color: #2b2b2b;
+		font-weight: 400;
+		line-height: 1em;
+		margin: 0 0 1em 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -174,10 +154,8 @@ body, html {
 	}
 
 	h2 {
-		color: #2C3E50; /* Darker, more appealing color */
 		font-size: 1.5em;
 		line-height: 1.5em;
-		margin-bottom: 0.4em; /* Further adjusted spacing below headings */
 	}
 
 	h3 {
@@ -215,7 +193,7 @@ body, html {
 	hr {
 		border: 0;
 		border-bottom: solid 2px #efefef;
-		margin: 0.8em 0; /* Reduced spacing around dividers */
+		margin: 2em 0;
 	}
 
 		hr.major {
@@ -1782,7 +1760,6 @@ body, html {
 
 		}
 
-
 /* Section/Article */
 
 	section.special, article.special {
@@ -1790,13 +1767,12 @@ body, html {
 	}
 
 	header p {
-		color: #151414;
+		color: #b2b2b2;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
 
 	header h2 + p {
-		color: #151414;
 		font-size: 1.25em;
 		margin-top: -1em;
 		line-height: 1.5em;
@@ -2176,8 +2152,10 @@ body, html {
 
 	ol {
 		list-style: decimal;
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 		padding-left: 1.25em;
+		color:#504e4e ; 
+		padding-bottom: 0;
 	}
 
 		ol li {
@@ -2186,8 +2164,11 @@ body, html {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 		padding-left: 1em;
+		color:#504e4e ;
+		padding-bottom: 0;
+		
 	}
 
 		ul li {
@@ -2471,8 +2452,8 @@ body, html {
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 0.35em;
-		border: solid 3px #efefef;
-		color: #787878 !important;
+		border: solid 3px #b7b3b3;
+		color: #504e4e !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -2577,70 +2558,6 @@ body, html {
 			cursor: default;
 		}
 
-
-/* Project Button Styling */
-.categories {
-    display: flex;
-	flex-wrap: wrap;
-    gap: 5px; /* Reduced space between buttons */
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.category-button {
-	flex: 1 1 auto; /*Adjusting button size for responsiveness*/
-    background-color: #9e9d9d; /* Slightly lighter brown */
-    color: white; /* White text */
-    font-size: 0.85rem; /* font size */
-    padding: 2px 8px; /* decrease size of padding for buttons */
-    border: none;
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer;
-    transition: all 0.3s ease;
-	margin: 4pm;
-	/*min-width: 90px; /* Ensure all buttons have the same minimum width */
-	max-width: 100px;
-	line-height: 1.2;
-	margin: 0.2em;
-    text-align: center; /* Center text in buttons */
-}
-
-.category-button:hover {
-    background-color: #666666; /* Darker grey on hover*/
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
-}
-
-.category-button.active {
-    background-color: #9c7c75; /* Darker brown for the active button */
-}
-
-
-/* Wrapper */
-#wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-}
-
-/* Sidebar */
-#sidebar {
-    flex: 0 0 20em;
-    display: flex;
-    flex-direction: column;
-    padding: 3em 2em 2em 2em;
-    background: #252527;
-    color: rgba(255, 255, 255, 0.5);
-    overflow-y: auto;
-    overflow-x: hidden;
-    text-align: center;
-}
-
-#sidebar .inner {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
 /* Work Item */
 
 	.work-item {
@@ -2680,7 +2597,7 @@ body, html {
 		-moz-justify-content: space-between;
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
-		justify-content: centre; /* Align content to the centre */
+		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
 		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
@@ -2688,22 +2605,15 @@ body, html {
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
 		color: rgba(255, 255, 255, 0.5);
-		position: fixed; /* Keep header fixed on the viewport */
-		height: 100%; /* Full viewpot height */
+		height: 100%;
 		left: 0;
-		padding: 2em;
+		padding: 8em 4em;
 		position: fixed;
-		text-align: center; /* Center text */
+		text-align: right;
 		top: 0;
 		width: 35%;
-        overflow-y: auto; /* Enable vertical scrolling */
-		margin: 0; /* Remove default margin */
-		padding: 1em 1em; /* Adjust padding for spacing */
-		align-items: centre; /* Center content horizintally */
-	
 	}
 
-	
 		#header > * {
 			-moz-flex-shrink: 0;
 			-webkit-flex-shrink: 0;
@@ -2718,9 +2628,6 @@ body, html {
 			-ms-flex-grow: 1;
 			flex-grow: 1;
 			margin: 0 0 2em 0;
-            flex-direction: column; /* Stack items vertically */
-            align-items: centre; /* Center items horizontally */
-            gap: 20px; /* Add spacing between elements */
 		}
 
 		#header strong, #header b {
@@ -2732,54 +2639,16 @@ body, html {
 		}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
+			color: #2b2b2b;
 			font-size: 1.35em;
 			line-height: 1.75em;
-            margin: 0;
-            text-align: centre;
+			margin: 0;
 		}
-	
-        #header .image.avatar {
-			margin-top: 0.5 !important; /* Eliminate unnecessary gap above the image */
-			margin: 0 auto 1em auto; /* Center the avatar and reduce gap */
-            border: 2px solid #fff; /* Add a border for better emphasis */
-            width: 12em;
-            height: 8m;
-            border-radius: 0;
-            overflow: hidden;
-			object-fit: cover;
-        }
-        
-        #header .image.avatar img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-        }
 
-/* Center Skills Section */
-	#header .inner {
-		text-align: center; /* Center text for skills section */
-		margin-top: 1em; /* Add slight space after avatar */
-	}
-
-/* Get in Touch Section */
-    #header .get-in-touch {
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    #header .get-in-touch a {
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 1.5em;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-    #header .get-in-touch a:hover {
-        color: #49bf9d;
-    }
+		#header .image.avatar {
+			margin: 0 0 1em 0;
+			width: 6.25em;
+		}
 
 /* Footer */
 
@@ -2822,17 +2691,14 @@ body, html {
 	#main {
 		margin-left: 35%;
 		max-width: 54em;
-		margin-right: 0;
-		padding: 2em;
-		text-align: left;
-		overflow-x: hidden;
+		padding: 8em 4em 4em 4em;
 		width: calc(100% - 35%);
 	}
 
 		#main > section {
 			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
+			margin: 2em 0 0 0;
+			padding: 2em 0 0 0;
 		}
 
 			#main > section:first-child {
@@ -3360,239 +3226,3 @@ body, html {
 			}
 
 	}
-
-/* Skills Section */
-#header .skills {
-    width: 90%;
-    text-align: centre;
-    margin: 1em 0;
-}
-
-#header .skills h3 {
-    font-size: 1.2em;
-    color: #fff;
-    margin-bottom: 0.5em;
-	
-}
-
-#header .skills ul {
-    list-style: none;
-    padding: 0;
-	text-align: left;
-}
-
-#header .skills ul li {
-    font-size: 0.9em;
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 0.3em;
-}
-
-/* Get in Touch Section */
-#header .contact {
-    margin-top: auto;
-    width: 90%;
-    text-align: center;
-}
-
-#header .contact h3 {
-    font-size: 1.5em;
-    color: #fff;
-    margin-bottom: 0.5em;
-}
-
-#header .contact ul {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    list-style: none;
-    padding: 0;
-}
-
-#header .contact ul li a {
-    font-size: 1.5em;
-    color: rgba(255, 255, 255, 0.7);
-    transition: color 0.3s ease;
-}
-
-#header .contact ul li a:hover {
-    color: #49bf9d;
-}
-
-/* Ensure black color for section headings */
-#aboutme h2, #publications h2, #projects h2 {
-    color: #000 !important; /* Use !important to override any other styles */
-    font-weight: bold;
-    margin-bottom: 0.2em; /* Adjust spacing if necessary */
-}
-/* Ensure paragraph text color is applied */
-#aboutme p, #publications p, #projects p,
-#aboutme ul li, #publications ul li, #projects ul li {
-    color: #333 !important; /* Light black color with higher specificity and !important */
-    line-height: 1.6; /* Better readability */
-}
-
-/* Reduce gaps between sections */
-#aboutme, #publications, #projects {
-    margin: 1em 0 !important; /* Minimized top and bottom margin with !important */
-    padding: 0 !important; /* Remove padding for compactness */
-}
-
-/* Reduce extra space between paragraphs or list items */
-#aboutme p, #publications p, #projects p,
-#aboutme ul li, #publications ul li, #projects ul li {
-    margin-bottom: 0.5em !important; /* Compact spacing between elements */
-}
-
-/* Optional: Specific to the publications section */
-#publications ul {
-    margin-bottom: 0; /* Ensure no extra margin below the list */
-}
-
-
-/* Main Content */
-#main {
-    margin-left: 30%;
-	margin-right: 0;
-    padding: 4em;
-	text-align: left;
-}
-
-#main h2 {
-    font-size: 1.5em;
-    color: #787878;
-    margin-bottom: 0.5em;
-}
-
-#main p {
-	margin-top: 0.5 em;
-    font-size: 1em;
-    color: #a2a2a2;
-    margin-bottom: 0.5em;
-}
-
-/* Projects Section */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5em;
-}
-
-.project-card {
-	display: grid;
-	text-align: center;
-	width: 100%; /*Allow dynamic sizing*/
-	height: auto;
-	margin: 10px;
-	padding: 15px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Keep a light shadow */
-    border-radius: 8px; /* Optional: rounded corners */
-	background: #f7f7f7;
-    border: 1px solid #efefef;
-    border-radius: 8px;
-	overflow: hidden;
-    transition: box-shadow 0.3s ease;
-	margin-left: 0.5em;
-	max-width: 300px;
-}
-
-.project-card:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.project-card img {
-    max-width: 100%;
-    height: 125px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 1em;
-	margin: 0 auto; /*Centers the image horixontally*/
-	display: block; /*Enusyre it's treated as a block level element*/
-}
-
-.project-card h3 {
-    font-size: 1em;
-    margin-bottom: 0.5em;
-    color: #787878;
-}
-
-.project-card p {
-    font-size: 0.9em;
-    color: #a2a2a2;
-	line-height: 1.4;
-    margin-bottom: 1em;
-}
-
-.project-card a {
-    display: inline-block;
-    padding: 0.6em 1em;
-    background: #49bf9d;
-    color: #fff;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 0.9em;
-    transition: background 0.3s ease;
-}
-
-.project-card a:hover {
-    background: #3eb08f;
-}
-
-.project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*Smaller Cards */
-    gap: 1.5em; /*Space between the cards*/
-    /*margin-top: 20px;*/
-	margin: 0 auto;
-
-}
-
-.project-item {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project-image {
-    width: 150%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.project-content {
-    margin-top: 10px;
-}
-
-.project-content h3 {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.project-content p {
-    font-size: 0.95em;
-    color: #555;
-}
-
-.project-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: #49bf9d;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project-link:hover {
-    text-decoration: underline;
-}
-@media (max-width: 768px) {
-    .project-list {
-		grid-template-columns: 1fr; /*Single column layout*/
-    }
-}
-
